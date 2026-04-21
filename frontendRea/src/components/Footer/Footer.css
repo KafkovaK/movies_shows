@@ -1,0 +1,163 @@
+/* FOOTER */
+.footer {
+    color: #aaaaaa;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    border-top: 1px solid #ED5EED33;
+    box-shadow: 0 -1px 10px rgba(237, 94, 237, 0.2);
+    padding: 48px 64px 24px 64px;
+    font-family: monospace;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    padding-bottom: 48px;
+}
+
+/* FOOTER BRAND LOGO */
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-logo {
+    color: #e91e8c;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 16px;
+}
+
+.footer-desc p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+/* FOOTER LINKS */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links-title {
+    color: #e91e8c;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: monospace;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: #e91e8c;
+    background-color: #111111;
+    border-color: #e91e8c;
+}
+
+/* FOOTER CONTACTS & ICONS */
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-contact-title {
+    color: #e91e8c;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.footer-contact a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-contact a:hover {
+    color: #ffffff;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-icons a {
+    color: #aaaaaa;
+    font-size: 22px;
+}
+
+.footer-icons a:hover {
+    color: #e91e8c;
+}
+
+/* FOOTER COPYRIGHT */
+.footer-copyright p {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #555555;
+}
+
+/* FOOTER DIVIDER LINE */
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    margin: 24px 0;
+    background-color: #ED5EED33;
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 32px 20px 16px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-desc {
+        display: none;
+    }
+
+    .footer-links,
+    .footer-contact {
+        align-items: flex-start;
+    }
+
+    .footer-icons {
+        gap: 16px;
+    }
+
+    .footer-links a {
+        padding: 8px 10px;
+    }
+
+    .footer-copyright p {
+        font-size: 11px;
+        text-align: center;
+        justify-content: center;
+    }
+}

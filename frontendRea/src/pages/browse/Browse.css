@@ -1,0 +1,144 @@
+.browse-page {
+    padding: 120px 64px 64px 64px;
+    min-height: 100vh;
+}
+
+.browse-title {
+    font-family: monospace;
+    color: var(--pink);
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+.browse-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.browse-loading {
+    font-family: monospace;
+    color: #888888;
+    letter-spacing: 2px;
+}
+
+.browse-load-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    padding-bottom: 64px;
+}
+
+.btn-load-more {
+    background-color: transparent;
+    color: var(--pink);
+    border: 1px solid var(--pink);
+    padding: 14px 48px;
+    font-family: monospace;
+    font-size: 14px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-load-more:hover {
+    background-color: var(--pink);
+    color: #ffffff;
+}
+
+.btn-load-more:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.genre-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.genre-btn {
+    background-color: transparent;
+    color: var(--text);
+    border: 1px solid #333333;
+    padding: 6px 16px;
+    font-family: monospace;
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.2s;
+}
+
+.genre-btn:hover {
+    border-color: var(--pink);
+    color: var(--pink);
+}
+
+.genre-btn-active {
+    background-color: var(--pink);
+    color: #ffffff;
+    border-color: var(--pink);
+}
+
+/* SCROLL TO TOP */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #000;
+    border: 1px solid #e91e8c;
+    color: #e91e8c;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    z-index: 1000;
+    font-family: monospace;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top:hover {
+    background: #e91e8c;
+    color: #000;
+    box-shadow: 0 0 15px #e91e8c;
+}
+
+.scroll-to-top .arrow {
+    font-size: 18px;
+}
+
+.scroll-to-top .label {
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .genre-filters {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 8px 14px;
+        mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        font-size: 13px;
+        scroll-snap-type: x mandatory;
+    }
+    .genre-filters::-webkit-scrollbar {
+        display: none;
+    }
+    .genre-btn {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+}

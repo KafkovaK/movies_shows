@@ -1,0 +1,9 @@
+:root {
+    --pink: #e91e8c;
+    --pink-dim: #ED5EED33;
+    --bg: #0a0a0a;
+    --text: #aaaaaa;
+    --white: #ffffff;
+    --font-mono: monospace;
+    --font-main: "Inter", sans-serif;
+}

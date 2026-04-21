@@ -1,0 +1,49 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateY(20px);
+}
+
+/* When the button becomes visible */
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-icon {
+    font-size: 24px;
+    color: #e91e8c;
+    text-shadow: 0 0 10px #e91e8c;
+    transition: transform 0.3s ease;
+}
+
+.scroll-text {
+    font-family: monospace;
+    font-size: 10px;
+    color: #e91e8c;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2px 8px;
+    border: 1px solid #e91e8c;
+}
+
+.scroll-to-top:hover .scroll-icon {
+    transform: translateY(-5px);
+}
+
+.scroll-to-top:hover .scroll-text {
+    background: #e91e8c;
+    color: #000;
+    box-shadow: 0 0 15px rgba(233, 30, 140, 0.5);
+}

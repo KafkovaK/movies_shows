@@ -1,0 +1,93 @@
+/* MOVIE CARDS */
+.movie-card {
+    width: 150px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* MOVIE CARD - SHOWS MOVIE TITLE */
+.movie-card-title {
+    color: #aaaaaa;
+    font-size: 12px;
+    font-family: monospace;
+    margin-top: 6px;
+    text-align: center;
+}
+
+/* MOVIE CARD - MOVIE POSTERS */
+.movie-card img {
+    width: 150px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* MOVIE CARD INNER IMAGE */
+.movie-card-inner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.movie-card-inner img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* MOVIE CARD OVERLAY HOVER */
+.movie-card:hover .movie-card-inner img {
+    transform: scale(1.05);
+}
+
+.movie-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.movie-card:hover .movie-card-overlay {
+    opacity: 1;
+}
+
+/* MOVIE CARD OVERLAY - SHOWS RATINGS */
+.overlay-rating {
+    font-family: monospace;
+    font-size: 13px;
+    color: #e91e8c;
+    margin-bottom: 6px;
+}
+
+/* MOVIE CARD OVERLAY - SHOWS THE MOVIE TITLE */
+.overlay-title {
+    font-family: monospace;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+/* MOVIE CARD OVERLAY - BUTTONS THAT SHOWS MOVIE DETAIL */
+.overlay-btn {
+    background-color: #e91e8c;
+    color: #ffffff;
+    border: none;
+    padding: 6px 14px;
+    font-family: monospace;
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.overlay-btn:hover {
+    background-color: #c2185b;
+}

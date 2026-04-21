@@ -1,0 +1,111 @@
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 64px;
+}
+
+.login-box {
+    background-color: #0d0d0d;
+    border: 1px solid var(--pink-dim);
+    padding: 48px;
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-shadow: 0 0 30px rgba(237, 94, 237, 0.1);
+}
+
+.login-logo {
+    color: var(--pink);
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.login-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--pink-dim);
+}
+
+.login-tab {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    font-family: monospace;
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+}
+
+.tab-active {
+    color: var(--pink);
+    border-bottom: 2px solid var(--pink);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-family: monospace;
+    font-size: 11px;
+    color: var(--text);
+    letter-spacing: 2px;
+}
+
+.form-group input {
+    background-color: #111111;
+    border: 1px solid #333333;
+    padding: 10px 14px;
+    color: var(--white);
+    font-family: monospace;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: var(--pink);
+}
+
+.form-group input::placeholder {
+    color: #555555;
+}
+
+.login-btn {
+    width: 100%;
+    margin-top: 8px;
+    justify-content: center;
+}
+
+.login-error {
+    font-family: monospace;
+    font-size: 12px;
+    color: #ff4444;
+    letter-spacing: 1px;
+}
+
+.login-success {
+    font-family: monospace;
+    font-size: 12px;
+    color: #22c55e;
+    letter-spacing: 1px;
+}

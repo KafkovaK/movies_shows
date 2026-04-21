@@ -1,0 +1,18 @@
+404://stream
+
+This website is supposed to put together Netflix and Letterboxd together. Now it only looks like a movie database.
+You can log in and discover movies.
+Now this project doesn't have a database so information is stored locally. Now that also means that these information
+doesn't appear when you log out and log in again. Also it's not encrypted.
+
+I connected React and Express by cors and fetching localhost port.
+I started by creating folders for both of these and installing what i needed. Then i continued by creating the structure
+and tried simple API fetch.
+Then i followed by creating functions and the frontend part. My design is supposed to look like a linux page with
+cyberpunk aspects.
+
+I tried to make the structure as clean as I could.
+
+After i was done with this a had to put it in GitHub. I did it in WebStorm.
+
+I am planning to expand this project by adding a database and shows like i did with the movies.

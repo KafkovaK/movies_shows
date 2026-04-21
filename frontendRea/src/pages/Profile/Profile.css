@@ -1,0 +1,117 @@
+.profile-page {
+    padding: 40px 60px;
+    color: var(--text);
+    font-family: "Inter", monospace;
+}
+
+/* HEADER */
+.profile-title {
+    font-family: "Inter", monospace;
+    color: var(--pink);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* MAIN CARD */
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #000000;
+    border: 1px solid var(--pink-dim);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* AVATAR */
+.profile-avatar img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid var(--pink);
+}
+
+/* USER INFO */
+.profile-info h2 {
+    margin: 0;
+    color: var(--white);
+    font-size: 22px;
+}
+
+.profile-info p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: var(--text);
+}
+
+.profile-section {
+    background: #000000;
+    border: 1px solid var(--pink-dim);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.profile-section h3 {
+    font-family: "Inter", monospace;
+    color: var(--pink);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.profile-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.profile-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-section li {
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-family: "Inter", monospace;
+    font-size: 13px;
+}
+
+.profile-section li:hover {
+    border-color: var(--pink);
+    background: #111111;
+    color: var(--pink);
+}
+
+.profile-btn {
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid var(--pink);
+    color: var(--pink);
+    padding: 6px 14px;
+    font-family: "Inter", monospace;
+    cursor: pointer;
+}
+
+.profile-btn:hover {
+    background: var(--pink);
+    color: #000;
+}
+
+.profile-textarea {
+    width: 100%;
+    min-height: 80px;
+    background: #111;
+    border: 1px solid var(--pink-dim);
+    color: var(--text);
+    font-family: "Inter", monospace;
+    padding: 10px;
+    resize: vertical;
+}
+
+.profile-textarea:focus {
+    outline: none;
+    border-color: var(--pink);
+}
